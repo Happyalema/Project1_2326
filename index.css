@@ -1,0 +1,291 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.B1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    color: rgb(155, 12, 12);
+  }
+
+.logo {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+}
+
+.logoimg {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    /* padding-right: 100px; */
+    padding-left: 70px;
+    color: greenyellow;
+}
+
+.logo:hover {
+    border: 1px solid rgb(218, 28, 28);
+}
+
+.container{
+    display: inline-flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    overflow: hidden;
+    max-width: 700px;
+}
+ 
+.searchBox{
+    border: 0;
+    width: 700px;   
+    padding: .8rem;
+    
+}
+
+.searchButton{
+    color: white;
+    background-color: rgba(93, 93, 99, 0.423);
+    border: 0;
+    /* padding: 0 1px; */
+    border-radius: 8px;
+}
+
+
+.header nav{
+    display: flex;
+    background: darkgray;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    padding-left: 50px;
+    gap: 40px;
+    margin-right: 10%;
+  
+}
+
+.header li{
+    list-style: none;
+}
+
+.header li a{
+color: black;
+text-decoration: none;
+padding: 3px;
+border-radius: 10px;
+}
+
+.tech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: xx-large;
+    font-weight: 20px;
+    color: green;
+}
+
+.gallery {
+    display:flex;
+    justify-content: center;
+     gap: 5px;
+     margin: 20px;
+     flex-wrap: wrap;
+     padding: 0 20px;
+ }
+
+ .tech1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.gallery img {
+    height: 300px;
+    /* object-fit: cover; */
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px;
+}
+
+
+
+footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    max-width: 1280px;
+    width: 95%;         
+    border-radius: 6px;
+        
+}
+        
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: darkgray;
+    gap: 3.5rem;
+    padding: 60px;
+        
+}
+        
+.footer-row .footer-col h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+        
+.footer-col .links {
+    margin-top: 20px;   
+}
+        
+.footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+        
+.footer-col .links li a {
+    text-decoration: none;
+    color: black; 
+}
+        
+.footer-col .links li a:hover {
+    color: #fff;
+}
+        
+.footer-col p {
+    margin: 20px 0;
+    color: black;
+    max-width: 300px;
+}
+        
+.footer-col form {
+    display: flex;
+    gap: 5px;
+}
+        
+.footer-col input {
+    height: 40px;       
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6 ;
+    padding-left: 10px;
+}
+        
+.footer-col input::placeholder {
+    color: #ccc;
+}
+        
+.footer-col form button {  
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+        
+.footer-col form button:hover {
+    background: #cecccc;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-top: 30px;
+       
+}
+    
+.icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+        
+                
+@media (max-width: 500px) {
+    .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+        
+}
+        
+.footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+        
+}
+        
+.footer-col form {
+    display: block;    
+}
+
+.footer-col form :where(input, button) {
+    width: 100%;
+}
+        
+.footer-col form button {
+    margin: 10px 0 0 0;
+        
+}
+        
+}
+        
+        
+@media screen and (max-width:500px) {
+    .logoimg{
+        display: block;
+}
+
+.header ul{
+    display: block;
+    flex-direction: column;
+    max-width: 300px;
+    min-width: 100px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    border-radius: 5px;
+}
+
+
+.header li{
+    margin: 10px auto;
+    width: 90%;
+}
+
+.header li a{
+    display: block;
+        /* width:100%; */
+}        
+}
